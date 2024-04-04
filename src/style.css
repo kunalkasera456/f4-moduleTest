@@ -1,0 +1,16 @@
+.container {
+    border: 2px solid red;
+
+    h1 {
+        
+    }
+   
+
+    .genre {
+        border: 2px solid green;
+        /* align-items: center; */
+        margin: 20px;
+        background-color:  rgb(229, 237, 237);
+    }
+    
+}

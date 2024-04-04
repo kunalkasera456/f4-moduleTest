@@ -1,6 +1,7 @@
 import GenreFilter from "./GenreFilter ";
 import MoviesList from "./MoviesList";
-
+import "./style.css";
+import "./table.css";
 
 const movies = [
     { title: 'The Shawshank Redemption', genre: 'Drama', year: 1994 },
@@ -32,9 +33,16 @@ const App = () => {
 
 
     return (
-        <div>
-            <GenreFilter genres={genres}/>
-            <MoviesList movies={movies}/>
+        <div className="container">
+            <h1 style={{alignContent: "center"}}>Top 15 Movies of All Time</h1>
+            <div className="genre">
+                <h2>Filter by Genre</h2>
+                <GenreFilter genres={genres}/>
+            </div>
+            
+            <div className="movieslist">
+                <MoviesList movies={movies}/>
+            </div>
         </div>
     )
 }
